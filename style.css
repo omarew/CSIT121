@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("images/photo.jpg"); /* strawberry background */
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  background-color: white;
+  padding: 10px;
+}
