@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  <style>
+    /* Base box styling */
+    div {
+      height: 200px;
+      width: 200px;
+      border: 3px solid black;
+      background-color: lightblue;
+      margin: 20px;
+      padding: 15px;
+    }
+
+    /* First box - absolutely positioned */
+    #box1 {
+      background-color: lightcoral;
+      position: absolute;
+      top: 50px;
+      left: 325px;
+    }
+
+    /* Second box - floated right */
+    #box2 {
+      background-color: lightgreen;
+      float: right;
+    }
+
+    /* Third box - default styling */
+    #box3 {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model Practice</h1>
+
+  <div id="box1">
+    <p>box 1</p>
+  </div>
+
+  <div id="box2">
+    <p>box 2</p>
+  </div>
+
+  <div id="box3">
+    <p>box 3</p>
+  </div>
+
+  <p style="clear: both; margin-top: 250px;">
+    <strong>Observations:</strong><br>
+    - Box 1 (red) is absolutely positioned 50px from top and 325px from left - it's removed from normal document flow<br>
+    - Box 2 (green) is floated right - it moves to the right side of its container<br>
+    - Box 3 (yellow) displays normally in the document flow<br>
+    Try resizing the window to see how positioning and floats behave!
+  </p>
+</body>
+</html>
